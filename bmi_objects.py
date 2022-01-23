@@ -20,9 +20,7 @@ class BMI:
     def __init__(self, hight_m, weight_kg):
         self.hight_m = hight_m
         self.weight_kg = weight_kg
-
-    def calc_bmi(self):
-        return self.weight_kg / self.hight_m ** 2
+        self.value = weight_kg / hight_m ** 2
 
 
 noriya = BMI(hight_m=1.7, weight_kg=65)
@@ -30,4 +28,4 @@ noriya = BMI(hight_m=1.7, weight_kg=65)
 print(noriya.hight_m)
 print(noriya.weight_kg)
 
-print(noriya.calc_bmi())
+print(noriya.value)
